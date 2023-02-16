@@ -2,7 +2,7 @@
 
 /**
  * comment
- * /
+ */
  
  int main(void)
 {
