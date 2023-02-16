@@ -1,8 +1,9 @@
-#!/bin/bash
 #include <stdio.h>
+
 /*
- * comments
+ * comment
  * /
+ 
  int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
