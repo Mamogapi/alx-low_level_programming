@@ -12,13 +12,13 @@ int main(void)
 
 	for (x = 0 ; x < 16 ; x++)
 	{
-		if(n < 10)
+		if (x < 10)
 		{
-			putchar('0' + n);
+			putchar('0' + x);
 		}
 		else
 		{
-			putchar(87 + n);
+			putchar(87 + x);
 		}
 
 	}
