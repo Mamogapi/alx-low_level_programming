@@ -16,10 +16,10 @@ int main(void)
 		for (y = 0 ; y <= 10 ; y++)
 		{
 	
-			for (z = 1 ; z < 10 ; z++)
+			for (z = 0 ; z < 10 ; z++)
 			{	
 				
-				for ( a = 0 ; a < 10 ; a++)
+				for ( a = 1 ; a < 10 ; a++)
 				{	putchar('0' + x);
                                 	putchar('0' + y);
 					putchar(32);
