@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
 /**
- * main : assign and display a random number 
+ * main - Entry point
  *
- * RETURN : 0
+ * Return: Always 0 (Sucess)
  */
+
 int main(void)
 {
 	int n;
