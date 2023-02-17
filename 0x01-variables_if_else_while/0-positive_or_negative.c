@@ -3,10 +3,10 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Sucess)
- */
+* main - Entry point
+*
+* Return: Always 0 (Sucess)
+*/ 
 int main(void)
 {
 	int n;
@@ -25,5 +25,6 @@ int main(void)
 	{
 	  printf("%d is negative\n", n);
 	}
+
 	return (0);
 }
