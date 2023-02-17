@@ -24,7 +24,7 @@ int main(void)
                                 	putchar('0' + y);
 					putchar(32);
 				
-					if (!( x > 9 ))
+					if (!( x > 11 ))
 					{	putchar('0' + z);
                                         	putchar('0' + a);
 						putchar(',');
