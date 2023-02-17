@@ -6,7 +6,7 @@
 /**
  * main : assign a random number to the variable n each time it is executed
  * and diplay output based on the value of n
- * RETURN : zero
+ * RETURN: 0
  */
 int main(void)
 {
