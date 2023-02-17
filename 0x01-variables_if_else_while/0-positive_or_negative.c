@@ -5,7 +5,8 @@
 
 /**
  * main : assign and display a random number 
- * RETURN: 0
+ *
+ * RETURN : 0
  */
 int main(void)
 {
