@@ -17,11 +17,11 @@ int main(void)
 		{
 	
 			for (z= 0 ; z < 10 ; z++)
-			{
+			{	
+				putchar('0' + x);
+                                putchar('0' + y);
 				for ( a = 0 ; a < 10 ; a++)
 				{
-					putchar('0' + x);
-					putchar('0' + y);
 					putchar(32);
 					putchar('0' + z);
 					putchar('0' + a);
