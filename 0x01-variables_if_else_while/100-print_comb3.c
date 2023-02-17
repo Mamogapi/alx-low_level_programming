@@ -17,7 +17,7 @@ int main(void)
 		do {
 			putchar('0' + x);
 			putchar('0' + i);
-			if (n < 8)
+			if (x < 8)
 			{
 				putchar(',');
 				putchar(32);
