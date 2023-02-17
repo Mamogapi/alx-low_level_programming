@@ -14,8 +14,8 @@ int main(void)
 	alph = 'a';
 	putchar(alph);
 	alph++;
-	
 	} while (alph <= 'z');
+	
 	putchar(alph);
 	return (0);
 }
