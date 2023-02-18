@@ -19,7 +19,7 @@ int main(void)
 			for (z = 0 ; z < 10 ; z++)
 			{	
 				
-				for ( a = 1 ; a < 10 ; a++)
+				for ( a = 1 ; a == 10 ; a++)
 				{	putchar('0' + x);
                                 	putchar('0' + y);
 					putchar(32);
