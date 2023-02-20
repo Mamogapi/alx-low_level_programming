@@ -3,9 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
-* main - Entry point
+* main - assign a random number to the variable n each time it is executed
 *
-* Return: Always 0 (Sucess)
+* Return: Always 0
 */
 int main(void)
 {
@@ -16,14 +16,14 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-	  printf("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	} else if (n == 0)
 	{
-	  printf("%d is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-	  printf("%d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
