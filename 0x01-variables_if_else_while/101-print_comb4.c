@@ -23,7 +23,7 @@ int main(void)
 				if (z < 7)
 				{
 					putchar(',');
-					putchar(32};
+					putchar(32);
 				}
 			}
 		}
