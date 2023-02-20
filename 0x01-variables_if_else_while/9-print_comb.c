@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - prints all possible combinations of single-digit numbers.
 *
-* Return: Always 0 (Succes)
+* Return: Always 0
 */
 
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 		if (x < 9)
 		{
 			putchar(',');
-			putchar(32);
+			putchar(' ');
 		}
 	}
 	putchar('\n');
