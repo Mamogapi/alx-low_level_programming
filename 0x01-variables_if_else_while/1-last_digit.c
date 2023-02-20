@@ -4,12 +4,14 @@
 /* more headers goes there */
 
 /**
-* main - Entry point
-* Return: Always 0 (Sucess)
+* main - assign a random number to the variable n each time it is executed
+* compare thhe last value with numbers
+* Return: Always 0
 */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
