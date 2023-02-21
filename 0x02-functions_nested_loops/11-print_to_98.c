@@ -20,6 +20,7 @@ int print_to_98(int n)
 			if (x != 98)
 			printf(", ");
 		}
+		printf("\n");
 	}
 	else if (n > 98)
 	{
@@ -29,11 +30,13 @@ int print_to_98(int n)
 			if (x != 98)
 			printf(", ");
 		}
+		printf("\n");
 	}
 	else
 	{
 		printf("98");
 	}
-		printf("\n");
+
+		return (98);
 
 }
