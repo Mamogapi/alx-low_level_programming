@@ -10,25 +10,28 @@
 
 int print_sign(int n)
 {
+	int x;
+
 	if (n > 0)
 	{
 		_putchar('+');
 		_putchar(',');
 		_putchar(' ');
-		return (1);
+		x = 1;
 	}
 	else if (n == 0)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		return (0);
+		x = 0;
 	}
 	else
 	{
 		_putchar('-');
 		_putchar(',');
 		_putchar(' ');
-		return (-1);
+		x = -1;
 	}
+	return (x);
 }
