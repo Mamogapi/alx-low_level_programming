@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * _isalphia - checks for alphabetic character
+ * _isalpha - checks for alphabetic character
  * @c: character
  *
  * Return: 1 if c is a letter, lowercase or uppercase or 0 otherwise
