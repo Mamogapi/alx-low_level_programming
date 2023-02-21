@@ -18,7 +18,7 @@ void times_table(void)
 			for (y = 0; y < 10; y++)
 			{
 				_putchar('0' + x);
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -28,9 +28,9 @@ void times_table(void)
 		{
 
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				_putchar('0' + y);
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -39,13 +39,13 @@ void times_table(void)
 		if (x == 2)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 2;
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
-				
+				_putchar('0' + (w / 10));
+
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -54,13 +54,13 @@ void times_table(void)
 		if (x == 3)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 3;
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
+				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -69,13 +69,13 @@ void times_table(void)
 		if (x == 4)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 4;
 				if ((w / 10) > 0)
 				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -84,13 +84,13 @@ void times_table(void)
 		if (x == 5)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 5;
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
+				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -99,27 +99,30 @@ void times_table(void)
 		if (x == 6)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 6;
+
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
+
+				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
+			}
 		}
 		if (x == 7)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 7;
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
+				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -128,14 +131,14 @@ void times_table(void)
 		if (x == 8)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 8;
 				if ((w / 10) > 0)
-                                _putchar('0' + (w / 10));
+				_putchar('0' + (w / 10));
 
 				_putchar('0' + (w % 10));
 
-				if(y < 9)
+				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
 				}
@@ -144,13 +147,13 @@ void times_table(void)
 		if (x == 9)
 		{
 			for (y = 0; y < 10; y++)
-                        {
+			{
 				w = y * 9;
 				if ((w / 10) > 0)
 				_putchar('0' + (w / 10));
-				
+
 				_putchar('0' + (w % 10));
-				if(y < 9)
+				if (y < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
