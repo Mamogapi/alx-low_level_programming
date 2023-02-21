@@ -18,6 +18,7 @@ void times_table(void)
 			for (y = 0; y < 10; y++)
 			{
 				_putchar('0' + x);
+				_putchar(' ');
 				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
@@ -30,6 +31,7 @@ void times_table(void)
 			for (y = 0; y < 10; y++)
 			{
 				_putchar('0' + y);
+				_putchar(' ');
 				if (y < 9)
 				{	_putchar(',');
 					_putchar(' ');
@@ -42,8 +44,13 @@ void times_table(void)
 			{
 				w = y * 2;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
-
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 				_putchar('0' + (w % 10));
 				if (y < 9)
 				{	_putchar(',');
@@ -57,7 +64,13 @@ void times_table(void)
 			{
 				w = y * 3;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 				if (y < 9)
@@ -72,7 +85,13 @@ void times_table(void)
 			{
 				w = y * 4;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 				if (y < 9)
@@ -87,7 +106,13 @@ void times_table(void)
 			{
 				w = y * 5;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 				if (y < 9)
@@ -103,8 +128,13 @@ void times_table(void)
 				w = y * 6;
 
 				if ((w / 10) > 0)
-
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 				if (y < 9)
@@ -119,7 +149,13 @@ void times_table(void)
 			{
 				w = y * 7;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 				if (y < 9)
@@ -134,7 +170,13 @@ void times_table(void)
 			{
 				w = y * 8;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 
 				_putchar('0' + (w % 10));
 
@@ -150,8 +192,13 @@ void times_table(void)
 			{
 				w = y * 9;
 				if ((w / 10) > 0)
-				_putchar('0' + (w / 10));
-
+				{
+					_putchar('0' + (w / 10));
+				}
+				else
+				{
+					_putchar(' ');
+				}
 				_putchar('0' + (w % 10));
 				if (y < 9)
 				{
