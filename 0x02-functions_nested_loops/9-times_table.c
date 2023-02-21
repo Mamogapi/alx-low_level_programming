@@ -116,10 +116,12 @@ void times_table(void)
 			for (y = 0; y < 10; y++)
                         {
 				w = y * 9;
-				_putchar('0' + w);
-				_putchar(',');
+				_putchar('48' + w);
 				if(y < 9)
-				_putchar(' ');
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
