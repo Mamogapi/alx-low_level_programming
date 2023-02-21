@@ -41,6 +41,7 @@ int main(void)
 		z1 = x1 + y1 + ((x2 + y2) / a);
 		z2 = (x2 + y2) % a;
 	}
-	printf("%lu%lu\n", z1, z2)'
+	printf("%lu%lu\n", z1, z2);
+
 	return (0);
 }
