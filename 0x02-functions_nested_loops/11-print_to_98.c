@@ -8,7 +8,7 @@
  * Return: integer numbers
  */
 
-void print_to_98(int n)
+int print_to_98(int n)
 {
 	int x;
 
@@ -34,5 +34,5 @@ void print_to_98(int n)
 	{
 		printf("98");
 	}
-		printf('\n');
+		printf("\n");
 }
