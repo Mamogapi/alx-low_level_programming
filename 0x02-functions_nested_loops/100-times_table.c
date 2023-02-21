@@ -12,7 +12,7 @@ void print_times_table(int n)
 {
 	int x, y;
 
-	if (n > 15 || n < 0)
+	if (n < 15 || n < 0)
 
 	for (x = 0; x <= n; x++)
 	{
@@ -20,7 +20,7 @@ void print_times_table(int n)
 		{
 			if (x == 0)
 			_putchar(((x * y) % 10) + '0');
-			else if ((x * y) < 20)
+			else if ((x * y) < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
