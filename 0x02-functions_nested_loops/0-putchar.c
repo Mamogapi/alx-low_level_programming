@@ -14,9 +14,9 @@ int main(void)
 
 	for (x = 0; x < MAXSTRING; x++)
 	{
-		putchar(messg[x]);
+		_putchar(messg[x]);
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
