@@ -22,16 +22,3 @@ void print_alphabet(void)
 	_putchar('\n');
 
 }
-
-/**
- * main - call the function print_alphabet()
- *
- * Return: Always 0
-*/
-
-int main(void)
-{
-
-	print_alphabet();
-	return (0);
-}
