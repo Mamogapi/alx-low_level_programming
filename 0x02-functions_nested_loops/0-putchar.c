@@ -12,7 +12,7 @@ int main(void)
 	char messg[] = "_putchar";
 	int x;
 
-	for (x = 0; x < MAXSTRING; x++)
+	for (x = 0; x < 8; x++)
 	{
 		_putchar(messg[x]);
 	}
