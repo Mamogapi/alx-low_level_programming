@@ -10,14 +10,14 @@ int main(void)
 {
 	long int x = 0;
 	long int y = 1;
-	long int z = 1;
+	long int z;
 	long int w;
 
 	for (z = 1; z <= 50; z++)
 	{
 		w = x + y;
 		printf("%ld", w);
-		if (z <= 50)
+		if (z < 50)
 		{
 			printf(", ");
 		}
