@@ -32,9 +32,11 @@ int main(void)
 			printf("%d", z);
 		}
 		if (z != 100)
-		printf(" ");
+		{
+			printf(" ");
+		}
 	}
 	 printf("\n");
-	 return (0);
+	return (0);
 }
 
