@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main -  finds and prints the largest prime factor of the number
@@ -8,18 +9,19 @@
  */
 int main(void)
 {
-	long x, y;
+	long x, y, z;
+	double square;
 
 	x = 612852475143;
+	square = sqrt(x);
 
-	for (y = 2; x > y; y++)
+	for (y = 1; y <= square; y++)
 	{
-		if ( x % y == 0)
+		if (x % y == 0)
 		{
-			x = x / y;
+			z = x / y;
 		}
 	}
-	printf("%lu", y);
-	_putchar('\n');
+	printf("%ld\n", z);
 	return (0);
 }
