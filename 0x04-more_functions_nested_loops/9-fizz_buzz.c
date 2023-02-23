@@ -23,7 +23,7 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		else if (z % 3 == 0 && z % 5 == 0)
+		else if ((z % 3 == 0) && (z % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
@@ -34,5 +34,6 @@ int main(void)
 		printf(" ");
 	}
 	 printf("\n");
+	 return (0);
 }
 
