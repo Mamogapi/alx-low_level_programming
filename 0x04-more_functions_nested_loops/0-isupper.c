@@ -14,7 +14,7 @@ int _isupper(int c)
 
 	w = 0;
 
-	for (x = 'A'; x = 'Z'; x++)
+	for (x = 65; x <= 90; x++)
 	{
 		if (x == c)
 		{
