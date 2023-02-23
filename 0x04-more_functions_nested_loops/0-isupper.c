@@ -10,14 +10,23 @@
 int _isupper(int c)
 {
 	char x;
+	int w;
+
+	w = 0;
 
 	for (x = 'A'; x = 'Z'; x++)
 	{
 		if (x == c)
 		{
-			return (1);
+			w = 1;
 		}
 	}
-
-	return (0);
+	if (w == 1)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
