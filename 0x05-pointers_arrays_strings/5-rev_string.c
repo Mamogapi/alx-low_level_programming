@@ -17,7 +17,7 @@ void rev_string(char *s)
 	b = strlen(s);
 	b--;
 
-	for (a = 0; a < b; a++)
+	for (a = 0; a <= b; a++)
 	{
 		b--;
 		temp = s[a];
