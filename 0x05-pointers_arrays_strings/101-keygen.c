@@ -15,7 +15,7 @@ int main(void)
 
 	int x = 0, randnumber = 0, sum = 0;
 
-	srand (time(null));
+	srand (time(NULL));
 
 	for (x = 0; sum <= 2644; x++)
 
