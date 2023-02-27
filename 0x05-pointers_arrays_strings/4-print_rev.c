@@ -11,6 +11,7 @@
 void print_rev(char *s)
 {
 	int z;
+
 	z = 0;
 
 	z = strlen(s);
