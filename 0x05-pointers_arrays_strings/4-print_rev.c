@@ -13,10 +13,7 @@ void print_rev(char *s)
 	int z;
 	z = 0;
 
-	while(s[z] != '\0')
-	{
-		z++;
-	}
+	z = strlen(s);
 	z--;
 
 	for (; z >= 0; z--)
