@@ -18,8 +18,8 @@ char *leet(char *a)
 	{
 		for (x = 0; x < 5; x++)
 		{
-			if (a[x] == strngUPP[x] || a[x] == strngLPP[x])
-				a[x] = z[x];
+			if (a[y] == strngUPP[x] || a[y] == strngLPP[x])
+				a[y] = z[x];
 		}
 	}
 	return (a);
