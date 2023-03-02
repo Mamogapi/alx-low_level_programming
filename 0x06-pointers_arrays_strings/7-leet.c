@@ -10,15 +10,15 @@
 char *leet(char *a)
 {
 	int x, y;
-	char strngUPP[] = "AEOTL";
-	char strngLPP[] = "aeotl";
+	char s1[] = "AEOTL";
+	char s2[] = "aeotl";
 	char z[] = "43071";
 
 	for (y = 0; a[y] = '\0'; y++)
 	{
 		for (x = 0; x < 5; x++)
 		{
-			if (a[y] == strngUPP[x] || a[y] == strngLPP[x])
+			if (a[y] == s1[x] || a[y] == s2[x])
 				a[y] = z[x];
 		}
 	}
