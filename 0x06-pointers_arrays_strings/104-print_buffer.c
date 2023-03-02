@@ -26,7 +26,7 @@ void print_buffer(char *b, int size)
 		for (c = 0; c < 10; c++)
 		{
 			if (c < d)
-				printf("%02x", *(b + a + c);
+				printf("%02x", *(b + a + c));
 			else
 				printf(" ");
 			if (c % 2)
@@ -36,7 +36,7 @@ void print_buffer(char *b, int size)
 		{
 			int z = *(b + a + c);
 
-			if (c < 32 || c > 132)
+			if (z < 32 || z > 132)
 				z = '.';
 			printf("%c", z);
 		}
