@@ -59,7 +59,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			num2 = 0;
 		else
 			num2 = *n2[y] - '0';
-		
+
 		tot = num1 + num2 + a;
 		if (tot >= 10)
 			a = 1;
