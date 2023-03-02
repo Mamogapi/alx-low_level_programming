@@ -17,19 +17,14 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[z] != '\0' && s2[z] != '\0')
 	{
-		if (s1[z] != s2[z])
+		w = s1[z] - s2[z];
+
+		if (w != 0)
 		{
-			w = 1;
 			break;
 		}
 		z++;
 	}
-	if (s1[z] != '\0' || s2[z] != '\0')
-		return (1);
-
-	if (w == 0)
-		return (0);
-	else
-		return (1);
+		return (w);
 
 }
