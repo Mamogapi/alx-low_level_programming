@@ -13,7 +13,7 @@ char *cap_string(char *a)
 		'(', ')', '{', '}', '\t', '\n', '\0'};
 
 	int x, z;
-	int y =32;
+	int y = 32;
 
 	for (x = 0; a[x] != '\0'; x++)
 	{
