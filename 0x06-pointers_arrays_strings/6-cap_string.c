@@ -12,8 +12,9 @@ char *cap_string(char *a)
 	char strng[] = {' ', ',', ';', '.', '!', '?', '"',
 		'(', ')', '{', '}', '\t', '\n', '\0'};
 
-	int x, z;
-	int y = 32;
+	int x, w, z;
+
+	w = 32;
 
 	for (x = 0; a[x] != '\0'; x++)
 	{

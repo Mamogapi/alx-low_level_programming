@@ -14,7 +14,7 @@ char *leet(char *a)
 	char s2[] = "aeotl";
 	char z[] = "43071";
 
-	for (y = 0; a[y] = '\0'; y++)
+	for (y = 0; a[y] != '\0'; y++)
 	{
 		for (x = 0; x < 5; x++)
 		{
