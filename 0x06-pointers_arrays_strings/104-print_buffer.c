@@ -17,7 +17,6 @@ void print_buffer(char *b, int size)
 	if (size <= 0)
 	{
 		printf("\n");
-		return;
 	}
 	while (a < size)
 	{
@@ -29,7 +28,7 @@ void print_buffer(char *b, int size)
 				printf("%02x", *(b + a + c));
 			else
 				printf(" ");
-			if (c % 2)
+			if (c % 2 == 2)
 				printf(" ");
 		}
 		for (c = 0; c < d; c++)
