@@ -15,11 +15,9 @@ void reverse(char *a)
 
 	w = 0;
 	z = 0;
-
-	while (*a[w] != '\0')
-		w++;
-
+	w = strlen(a);
 	w--;
+
 	for (z = 0; z < w; z++)
 	{
 		tmp = *a[z];
@@ -43,10 +41,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int a = 0, z = 0, y = 0, b = 0;
 	int num1 = 0, num2 = 0, tot = 0;
 
-	z = strlen(n1);
-	y = strlen(n2);
+	z = strlen(*n1);
+	y = strlen(*n2);
+
 	z--;
 	y--;
+
 	if (y >= size_r || z >= size_r)
 		return (0);
 	while (y >= 0 || z >= 0 || a == 1)
@@ -59,12 +59,13 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			num2 = 0;
 		else
 			num2 = *n2[y] - '0';
+		
 		tot = num1 + num2 + a;
 		if (tot >= 10)
 			a = 1;
 		else
 			a = 0;
-		if (b >= size_r - 1)
+		if (b >= (size_r - 1))
 			return (0);
 		*(r + b) = (tot % 10) + '0';
 		b++;
@@ -73,6 +74,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 	if (b == size_r)
 		return (0);
+
 	*(r + b) = '\0';
 	reverse(r);
 	return (r);
