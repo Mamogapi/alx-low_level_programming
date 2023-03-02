@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
+
 
 /**
  * reverse - reverse a string
@@ -10,20 +9,21 @@
 
 void reverse(char *a)
 {
-	int w, z;
+	int w = 0;
+	int j = 0;
 	char tmp;
 
-	w = 0;
-	z = 0;
-	w = strlen(a);
-	w--;
-
-	for (z = 0; z < w; z++)
+	while (*(a+w)!='\0')
 	{
-		tmp = *a[z];
-		*a[z] = *a[w];
-		*a[w] = tmp;
-		w--;
+		w++;
+	}
+	w-;
+
+	for (j = 0; j < w; j++,w-)
+	{
+		tmp = *(a + j);
+		*(a + j) = *(n + a);
+		*(a + j) = tmp;
 	}
 }
 
@@ -38,44 +38,42 @@ void reverse(char *a)
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int a = 0, z = 0, y = 0, b = 0;
-	int num1 = 0, num2 = 0, tot = 0;
+	 int overflow = 0, w = 0, j = 0, digits = 0;
+	 int val1 = 0, val2 = 0, temp_tot = 0;
 
-	z = strlen(*n1);
-	y = strlen(*n2);
-
-	z--;
-	y--;
-
-	if (y >= size_r || z >= size_r)
-		return (0);
-	while (y >= 0 || z >= 0 || a == 1)
-	{
-		if (z < 0)
-			num1 = 0;
-		else
-			num1 = *n1[z] - '0';
-		if (y < 0)
-			num2 = 0;
-		else
-			num2 = *n2[y] - '0';
-
-		tot = num1 + num2 + a;
-		if (tot >= 10)
-			a = 1;
-		else
-			a = 0;
-		if (b >= (size_r - 1))
-			return (0);
-		*(r + b) = (tot % 10) + '0';
-		b++;
-		z--;
-		y--;
-	}
-	if (b == size_r)
-		return (0);
-
-	*(r + b) = '\0';
-	reverse(r);
-	return (r);
+	 while (*(n1 + w) != '\0')
+		 i++;
+	 while (*(n2 + j) != '\0')
+		 j++;
+	 w--;
+	 j--;
+	 if (j >= size_r || w >= size_r)
+		 return (0);
+	 while (j >= 0 || w >= 0 || overflow == 1)
+	 {
+		 if (w < 0)
+			 val1 = 0;
+		 else
+			 val1 = *(n1 + w) - '0';
+		 if (j < 0)
+			 val2 = 0;
+		 else
+			 val2 = *(n2 + j) - '0';
+		 temp_tot = val1 + val2 + overflow;
+		 if (temp_tot >= 10)
+			 overflow = 1;
+		 else
+			 overflow = 0;
+		 if (digits >= (size_r - 1))
+			 return (0)
+		 *(r + digits) = (temp_tot % 10) + '0';
+		 digits++;
+		  j--;
+		  w--;
+	 }
+	 if (digits == size_r)
+		 return (0);
+	 *(r + digits) = '\0';
+	 rev_string(r);
+	 return (r);
 }
