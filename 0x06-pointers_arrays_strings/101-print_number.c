@@ -19,7 +19,7 @@ void print_number(int n)
 		x = -n;
 	}
 
-	if (x / n != 0)
+	if (x / 10 != 0)
 	{
 		print_number(x / 10);
 	}
