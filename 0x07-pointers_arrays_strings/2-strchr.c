@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[x] == c)
 		{	return (s[x]);
-			exit (0);
+			exit(0);
 		}
 	}
 	if (x == strlen(s) - 1)
