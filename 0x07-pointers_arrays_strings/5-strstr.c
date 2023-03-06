@@ -12,7 +12,6 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int x, y;
 
 	for (; *haystack != '\0'; haystack++)
 	{
