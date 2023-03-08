@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+int root_recursion(int x, int y);
+
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
  * @n: input integer variable
@@ -18,7 +20,7 @@ int _sqrt_recursion(int n)
 /**
  * root_recursion - finds the natural square root of a number
  * @x: input integer variable of square root
- * @y: input integer variable to increment 
+ * @y: input integer variable to increment
  *
  * Return: the square root
  */
