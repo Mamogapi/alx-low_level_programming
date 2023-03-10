@@ -4,7 +4,7 @@
 
 /**
  * verify_num - check if the character that is a number
- * @x: character variable
+ * @q: character variable
  *
  * Return: 1 or 0
  */
