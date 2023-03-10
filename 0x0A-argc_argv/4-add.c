@@ -9,24 +9,29 @@
  * Return: 1 or 0
  */
 
-int verify_num(char x)
+int verify_num(char *q)
 {
-	int x = 0, y = 0, w;
+	int x, y, w;
 
-	w = strlen(a);
+	x = 0;
+	y = 0;
+
+	w = strlen(q);
+
 	while (x < w)
 	{
-		if (a[x] < '0' || a[x] > '9')
+		if (q[x] < '0' || q[x] > '9')
 		{
 			return (-1);
 		}
 		else
-			y = y * 10 + (a[x] - '0');
+			y = y * 10 + (q[x] - '0');
 
 		x++;
 	}
 	return (y);
 }
+
 /**
  * main - adds positive numbers
  * @argc: integer variable
