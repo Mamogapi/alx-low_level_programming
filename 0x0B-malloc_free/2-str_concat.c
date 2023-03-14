@@ -20,8 +20,8 @@ char *str_concat(char *s1, char *s2)
 	int x, y;
 	char *wrd;
 
-	x = strng_leng(s1);
-	y = strng_leng(s2);
+	x = strng_length(s1);
+	y = strng_length(s2);
 
 	wrd = malloc(((x + y) + 1) sizeof(char));
 
