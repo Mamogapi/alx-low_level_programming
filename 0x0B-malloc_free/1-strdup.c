@@ -15,8 +15,9 @@ char *_strdup(char *str)
 {
 	int x, y;
 	char *copy;
-	copy = malloc(size * sizeof(char));
+
 	y = str_length(str);
+	copy = malloc(y * sizeof(char));
 
 	if (str == NULL)
 		return (NULL);
@@ -26,7 +27,7 @@ char *_strdup(char *str)
 		if (copy == NULL)
 			return (NULL);
 
-		copy[x] = str [x];
+		copy[x] = str[x];
 	}
 	return (copy);
 }
@@ -35,7 +36,7 @@ char *_strdup(char *str)
  * str_length - function that return the length of string
  * @strng: intput string variable
  *
- * Return: the integer value 
+ * Return: the integer value
  */
 
 int str_length(char *strng)
@@ -44,7 +45,7 @@ int str_length(char *strng)
 
 	for (x = 0; strng[x] <= '\0'; x++)
 	{
-		
+
 	}
 	return (x);
 }
