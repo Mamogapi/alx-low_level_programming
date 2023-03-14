@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int strng_length(char strng);
+int strng_length(char *strng);
 char *strng_concat(char *strn, char *strn2, int z);
 
 /**
@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 	x = strng_length(s1);
 	y = strng_length(s2);
 
-	wrd = malloc(((x + y) + 1)sizeof(char));
+	wrd = malloc(((x + y) + 1) * sizeof(char));
 
 	if (s1 == NULL)
 		s1 = "";
