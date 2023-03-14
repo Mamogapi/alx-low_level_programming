@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	int x, y;
 	char *copy;
 
-	y = str_length(str);
+	y = str_length(str) + 1;
 	copy = malloc(y * sizeof(char));
 
 	if (str == NULL)
@@ -43,7 +43,7 @@ int str_length(char *strng)
 {
 	int x;
 
-	for (x = 0; strng[x] <= '\0'; x++)
+	for (x = 0; strng[x] != '\0'; x++)
 	{
 
 	}
