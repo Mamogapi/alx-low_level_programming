@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 	x = strng_length(s1);
 	y = strng_length(s2);
 
-	wrd = malloc(((x + y) + 1) sizeof(char));
+	wrd = malloc(((x + y) + 1)sizeof(char));
 
 	if (s1 == NULL)
 		s1 = "";
@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
  * Return: the length of the string
  */
 
-int strng_length(char strng)
+int strng_length(char *strng)
 {
 	int y;
 
