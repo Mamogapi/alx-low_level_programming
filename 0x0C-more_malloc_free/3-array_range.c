@@ -12,7 +12,7 @@
 
 int *array_range(int min, int max)
 {
-	int *arry, x, y, z;
+	int *arry, x, y;
 
 	if (min > max)
 		return (NULL);
