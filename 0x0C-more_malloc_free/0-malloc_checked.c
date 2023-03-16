@@ -16,7 +16,7 @@ void *malloc_checked(unsigned int b)
 	pnt = (unsigned int *)malloc(b);
 
 	if (pnt != NULL)
-		return (pnt);
-	else
-		exit (98);
+		return (pnt)
+
+	exit(98);
 }
