@@ -5,7 +5,8 @@
 char *stcp(char *str1, char *str2, unsigned int x);
 
 /**
- * _realloc - function that reallocates a memory block using malloc and free
+ * _realloc - function that reallocates a memory block using malloc
+ * and free
  * @ptr: void pointer variable
  * @old_size: integer variable
  * @new_size: integer variable
@@ -30,13 +31,16 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == old_size)
 		return (ptr);
 	if (new_size < old_size)
-		min = new_size;
+		x = new_size;
 	else
-		min = old_size;
+		x = old_size;
+
 	pnt = malloc(new_size);
+
 	if (pnt == NULL)
 		return (NULL);
-	pnt = stcp(pnt, ptr, min);
+
+	pnt = stcp(pnt, ptr, x);
 	free(ptr);
 	return (pnt);
 }
