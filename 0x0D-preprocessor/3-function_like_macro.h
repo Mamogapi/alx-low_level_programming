@@ -3,4 +3,4 @@
 
 #define ABS(N) (((N) < (0)) ? -(N) : (N))
 
-endif /* _function_like_macro.h_ */
+#endif /* _function_like_macro.h_ */
