@@ -25,5 +25,5 @@ if (d)
 		printf("Owner: %s\n", d->owner);
 }
 else
-	return;
+	return (0);
 }
