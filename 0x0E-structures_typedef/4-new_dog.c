@@ -24,10 +24,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	for (x = 0; name[x] = '\0'; x++)
-
-	for (z = 0; owner[z] = '\0'; z++)
-
+	for (x = 0; name[x]; x++)
+		;
+	for (z = 0; owner[z]; z++)
+		;
 	pnt->name = malloc(x + 1);
 	pnt->owner = malloc(z + 1);
 
