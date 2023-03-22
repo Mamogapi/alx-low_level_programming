@@ -5,7 +5,7 @@
  * @a: integer variable
  * @b: integer variable
  *
- * Return: sum 
+ * Return: sum
  */
 
 int op_add(int a, int b)

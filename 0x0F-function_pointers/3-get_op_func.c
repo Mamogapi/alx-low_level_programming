@@ -5,7 +5,7 @@
  * get_op_func - function selects the correct function to perform
  * the operation asked by the user
  * @s: string pointer variable
- * 
+ *
  * Return: if s doesnt match return null or pointer
  */
 
