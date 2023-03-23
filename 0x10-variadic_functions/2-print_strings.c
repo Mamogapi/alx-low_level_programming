@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - function that prints strings, followed by a new line
+ * print_strings - function that prints strings
  * @n: is the number of strings passed to the function
  * @separator: is the string to be printed between the strings
  *
@@ -27,12 +27,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s", str)
 
-		if (separator != NULL && x != < (n - 1))
+		if (separator != NULL && x < (n - 1))
 			printf("%s", separator);
 
 	}
+	va_end(pnt);
 	printf("\n");
-
-	va_end(strings);
 }
 ~
