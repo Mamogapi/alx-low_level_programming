@@ -7,8 +7,7 @@
  * @n: is the number of strings passed to the function
  * @separator: is the string to be printed between the strings
  *
- * Return: print string else if separator is null dont and if string is null
- * print nil.
+ * Return: 0
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
