@@ -27,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s", str);
 
-		if (separator != NULL && x < (n - 1))
+		if (x < n - 1 && separator)
 			printf("%s", separator);
 
 	}
