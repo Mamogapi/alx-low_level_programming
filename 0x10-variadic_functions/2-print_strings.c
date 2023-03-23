@@ -6,7 +6,7 @@
  * print_strings - function that prints strings, followed by a new line
  * @n: is the number of strings passed to the function
  * @separator: is the string to be printed between the strings
- * 
+ *
  * Return: print string else if separator is null dont and if string is null
  * print nil.
  */
