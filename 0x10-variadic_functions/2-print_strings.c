@@ -14,19 +14,18 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int x;
-	char str = "nil";
+	char str = "(nil)";
 	va_list pnt;
 
 	va_start(pnt, n);
 
-	if (seperator == NULL)
-		exit;
 	for (x = 0; x < n; x++)
 	{
-		if (va_arg(pnt, int) == NULL)
-			printf("%s%s ", str, separator);
-		else
-			printf("%s%s ",va_arg(pnt, int), separator); 	
+		if (va_arg(pnt, char) == NULL && separator != NULL && x < n - 1)
+			printf("%s %s", str, separator);
+		if (va_arg(pnt, char) != NULL && separator != NULL && x < n - 1)
+			printf("%s %s",va_arg(pnt, char), separator);
+
 	}
 	va_end(pnt);
 	printf("\n");
