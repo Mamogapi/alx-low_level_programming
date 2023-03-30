@@ -28,7 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 
 /**
  * cal_len - fucntion calculate the length of string
- * str: pointer string variable
+ * @str: pointer string variable
  * Return: length of string
  */
 
