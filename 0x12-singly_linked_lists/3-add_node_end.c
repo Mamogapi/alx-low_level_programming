@@ -12,15 +12,17 @@ int cal_len(const char *str);
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
-	list_t temp;
+	list_t *temp;
 
 	new = (list_t *)malloc(sizeof(list_t));
 
-	if (new == NULL || str == NULL)
+	if (new == NULL)
 		return (NULL);
+
 	new->str = strdup(str);
 	new->len = cal_len(str);
 	new->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = new;
