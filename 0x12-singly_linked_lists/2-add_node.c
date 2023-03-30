@@ -20,10 +20,10 @@ list_t *add_node(list_t **head, const char *str)
 
 	temp->str = strdup(str);
 	temp->len = cal_len(str);
-	temp->next = (*head);
-	(*head) = temp;
+	temp->next = *head;
+	*head = temp;
 
-	return (temp);
+	return (*head);
 }
 
 /**
@@ -32,9 +32,9 @@ list_t *add_node(list_t **head, const char *str)
  * Return: length of string
  */
 
-int cal_len(const char *str)
+unsigned int cal_len(const char *str)
 {
-	int x = 0;
+	unsigned int x = 0;
 
 	while (str[x] != '\0')
 	{
