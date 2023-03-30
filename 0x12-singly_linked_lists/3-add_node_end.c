@@ -29,7 +29,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (temp->next != NULL)
 		temp = temp->next;
 	temp->next = new;
-	return (*new);
+	return (new);
 }
 
 /**
@@ -44,5 +44,6 @@ int cal_len(const char *str)
 
 	while (str[x] != '\0')
 		x++;
+
 	return (x);
 }
