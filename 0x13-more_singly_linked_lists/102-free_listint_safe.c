@@ -18,22 +18,23 @@ size_t free_listint_safe(listint_t **h)
 	while (*h)
 	{
 		y = *h - (*h)->next;
+
 		if (y > 0)
 		{
 			nodes = (*h)->next;
 			free(*h);
 			*h = nodes;
-			y++;
+			x++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			y++;
+			x++;
 			break;
 		}
 	}
 	*h = NULL;
 
-	return (y);
+	return (x);
 }
