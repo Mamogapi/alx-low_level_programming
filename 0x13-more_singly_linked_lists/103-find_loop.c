@@ -10,8 +10,8 @@ listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *node1, *node2;
 
-	*node1 = head;
-	*node2 = head;
+	node1 = head;
+	node2 = head;
 
 	if (!head)
 		return (NULL);
