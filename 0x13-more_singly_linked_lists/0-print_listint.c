@@ -10,20 +10,12 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t x = 0;
-
-	if (listint_t == NULL)
+		
+	while (h != NULL)
 	{
-		printf("List is empty");
-		break;
+		printf("%d\n", h->n);
+		x++;
+		h = h->next;
 	}
-	else
-	{
-		while (h != NULL)
-		{
-			printf("%d\n", h->n);
-			x++;
-			h = h->next;
-		}
-		return (x);
-	}
+	return (x);
 }
