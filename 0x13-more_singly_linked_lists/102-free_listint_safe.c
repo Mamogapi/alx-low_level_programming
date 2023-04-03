@@ -12,7 +12,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *nodes;
 	size_t x = 0;
 
-	if (!h)
+	if (!h || !*h)
 		return (0);
 
 	while (*h)
