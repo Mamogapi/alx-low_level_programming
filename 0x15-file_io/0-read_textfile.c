@@ -24,11 +24,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fr = read(fp, str, letters);
 
-	if (fp == NULL || fr == NULL)
+	if (fp <= 0 || fr <= 0)
 		return (0);
 	fw = write(STDOUT_FILENO, str, fr);
 
-	if (fw == NULL || fw != fr)
+	if (fw <= 0 || fw != fr)
 		return (0);
 	close(fp);
 	free(str);
